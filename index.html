@@ -1,1 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Private Access</title>
 
+<style>
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #000;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  width: 90%;
+  max-width: 380px;
+  background: #111;
+  border-radius: 15px;
+  padding: 25px;
+  text-align: center;
+  box-shadow: 0 0 25px rgba(255,0,0,0.5);
+}
+
+h1 {
+  font-size: 22px;
+  color: #ff2a2a;
+}
+
+p {
+  font-size: 14px;
+  color: #ccc;
+}
+
+.counter {
+  font-size: 26px;
+  color: #00ffcc;
+  margin: 10px 0;
+  font-weight: bold;
+}
+
+.btn {
+  display: block;
+  margin-top: 20px;
+  padding: 15px;
+  background: red;
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 10px;
+  animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+  0% {transform: scale(1);}
+  50% {transform: scale(1.05);}
+  100% {transform: scale(1);}
+}
+
+.warning {
+  color: yellow;
+  font-size: 13px;
+  margin-top: 10px;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+  <h1>🔞 Private Members Area</h1>
+  <p>Only for adults (18+)</p>
+
+  <p>🔥 People online near you:</p>
+  <div class="counter" id="counter">32</div>
+
+  <p class="warning">⚠️ Limited access available</p>
+
+  <a href="https://zkgsh.bemobtrcks.com/go/7673955c-3c91-4f96-9283-28332c356b12?cost={cost}&clickid={clickid}&zoneid={zoneid}&campaingn_id={campaingn_id}&creative_id={creative_id}" class="btn">
+    ENTER NOW 🔥
+  </a>
+
+  <p>✔ 100% Private<br>
+     ✔ Instant Access<br>
+     ✔ No Registration</p>
+</div>
+
+<script>
+// fake live counter
+let count = 32;
+setInterval(() => {
+  let change = Math.floor(Math.random() * 3) - 1;
+  count += change;
+  if(count < 20) count = 25;
+  if(count > 60) count = 55;
+  document.getElementById("counter").innerText = count;
+}, 2000);
+</script>
+
+</body>
+</html>
